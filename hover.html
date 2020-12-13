@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>  
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    
+    <script>
+        $("document").ready(function(){
+          
+            $(".textCopy").hover(highlightCopy);
+            
+            function highlightCopy(){
+                $(this).toggleClass("highlight");
+            }
+         
+        });
+        
+    
+    </script>
+    
+    <style>
+        .highlight{
+            text-shadow: 1px 1px #cccccc;
+           
+        }
+    </style>
+    
+</head>
+
+<body>
+   
+    <div id="textBox">
+  <p class="textCopy">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ex ipsum. Donec pharetra turpis eu elit consequat auctor. Aliquam nec fringilla ligula, sed luctus justo. Phasellus quis nisl tortor. Maecenas ultrices enim nec quam imperdiet, nec pretium est sollicitudin. </p>
+        
+    <p>  
+        Proin hendrerit consectetur volutpat. Aliquam neque ex, luctus sed pretium quis, molestie non lorem. Maecenas hendrerit fermentum lectus, eget placerat nisl congue et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras molestie cursus consequat. Pellentesque imperdiet, tortor in tristique tincidunt, augue nunc viverra lectus, nec auctor mauris augue eget massa. Mauris eleifend elit vel interdum aliquam.
+    </p>
+    </div>
+</body>
+
+
+</html>
